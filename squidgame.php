@@ -1,3 +1,4 @@
+<?php
 
 namespace squidgame;
 
@@ -984,3 +985,4 @@ class squidgame extends \pocketmine\plugin\PluginBase implements \pocketmine\eve
 	}
 
 }
+
