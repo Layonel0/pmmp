@@ -35,8 +35,6 @@ class squidgame extends \pocketmine\plugin\PluginBase implements \pocketmine\eve
 		$this->servidor = \pocketmine\Server::getInstance();
 		$this->servidor->getPluginManager()->registerEvents($this,$this); 
 	    @mkdir($this->getDataFolder());
-	    $this->flechasxyz = new \pocketmine\utils\Config($this->getDataFolder() . "flechasxyz.yml", \pocketmine\utils\Config::YAML);
-	    \pocketmine\entity\Entity::registerEntity(\squidgame\flecha::class);
 	}
 
 	//COMANDOS BASICOS DEL JUEGO
@@ -985,4 +983,5 @@ class squidgame extends \pocketmine\plugin\PluginBase implements \pocketmine\eve
 	}
 
 }
+
 
